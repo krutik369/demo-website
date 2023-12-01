@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Lora:wght@600&family=Poppins:ital,wght@0,500;1,700&family=Rubik:wght@300;400&family=Young+Serif&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --darkblue: #0b132a;
+  --red: #f53838;
+  --white: #ffecec;
+  --black: #070707;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+.navbar {
+  width: 100%;
+  height: auto;
+  animation: fadeIn 4s ease-out;
+  z-index: 10;
+  position: sticky;
+  top: 0;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.logo {
+  width: 148px;
+  height: 36.23px;
+  margin-top: 50px;
+  margin-left: 150px;
+}
+
+.menu {
+  width: 365px;
+  height: 19px;
+  margin-left: 538px;
+  position: absolute;
+  margin-top: 58.62px;
+  display: flex;
+}
+
+.menu ul {
+  display: flex;
+  list-style-type: none;
+  gap: 40px;
+}
+
+.menu a {
+  text-decoration: none;
+  font: 16px;
+  color: black;
+  font-weight: 400;
+}
+
+.menu a:hover {
+  color: mediumblue;
+  transition: 0.3s ease;
+  text-decoration: underline #070707 2px;
+}
+
+.auth {
+  margin-left: 228px;
+  font-weight: 500;
+  gap: 75px;
+}
+
+.auth .signin {
+  width: 60px;
+  height: 19px;
+}
+
+.auth .signup {
+  width: 120px;
+  height: 19px;
+}
+
+.auth .signup a {
+  color: var(--red);
+  border: 1px solid #f53855;
+  border-radius: 50px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-weight: 900;
+}
+
+.auth .signup:hover a {
+  color: white;
+  background-color: var(--red);
+  transition: 1s ease-out;
+}
+
+.auth .signin:hover a {
+  color: var(--red);
+  transition: 0.5s ease;
+}
+
+/*hero section*/
+
+.row1,
+.row2,
+.row3 {
+  position: relative;
+  animation: textSlide 2s linear;
+}
+
+@keyframes textSlide {
+  0% {
+    left: -500px;
+  }
+
+  100% {
+    left: 8px;
+  }
+}
+
+.container .row h1 {
+  width: 555px;
+  height: auto;
+  font: 50px;
+  font-weight: 500;
+  margin-top: 106.77px;
+  margin-left: 50px;
+}
+
+.row .row2 {
+  width: 480px;
+}
+
+.container .row p {
+  height: auto;
+  margin-top: 10.77px;
+  margin-left: 50px;
+}
+
+.container .row .btn1 {
+  width: 250px;
+  height: 60px;
+  height: auto;
+  background-color: var(--red);
+  border-radius: 10px;
+  border: hidden;
+  margin-left: 50px;
+  margin-top: 30px;
+  padding: 15px;
+  color: var(--white);
+  transition: all 0.2s ease;
+  box-shadow: 2px 2px 4px rgba(70, 69, 69, 0.828);
+}
+
+.container .row .btn1:hover {
+  background-color: var(--white);
+  color: var(--black);
+  border: 2px solid var(--red);
+  font-size: large;
+  transition: 2s ease-in-out;
+  box-shadow: 2px 2px 4px var(--red);
+}
+
+.col {
+  width: 554px;
+  height: 346.63px;
+  margin-left: 736px;
+  margin-top: -250px;
+}
+
+.container .col {
+  animation: imgSlide 2s 0s linear;
+  position: relative;
+}
+
+@keyframes imgSlide {
+  0% {
+    right: -400px;
+  }
+
+  100% {
+    right: 10px;
+  }
+}
+
+/* model */
+
+.boxcontainer {
+  width: 1140px;
+  height: auto;
+  margin-left: 50px;
+  margin-top: 80px;
+  display: flex;
+  border: 1px solid var(--white);
+  border-radius: 5px;
+  padding: 50px;
+  text-align: center;
+  gap: 50px;
+  margin-left: 200px;
+  padding-left: 150px;
+}
+
+.container1 {
+  display: flex;
+}
+
+.container1 img {
+  width: 55px;
+  height: 55px;
+  background-color: var(--white);
+  border-radius: 70px;
+  padding: 5px;
+  margin-right: 30px;
+}
+
+.container2 p {
+  width: 54px;
+  height: auto;
+  color: #0b132a;
+  font-size: large;
+  margin-right: 200px;
+}
+
+/* secondpage */
+
+.page2_img {
+  width: 502.48px;
+  height: 410.11px;
+  margin-left: 184.52px;
+  animation: imgSlide 2s 0s linear;
+  position: relative;
+}
+
+.secondpage .page2 {
+  width: 427.88px;
+  height: 365px;
+  float: right;
+  margin-right: 200px;
+  margin-top: -300px;
+}
+
+.secondpage p {
+  font-size: 14px;
+}
+
+/* footer */
+
+.footer {
+  width: 100%;
+  height: 300px;
+  background-color: rgba(217, 207, 207, 0.688);
+  margin-top: 50px;
+  display: flex;
+}
+
+.footer_first {
+  width: 325px;
+  margin-left: 150px;
+}
+
+.footer_first img {
+  margin-top: 50px;
+}
+
+.footer_first p {
+  margin-top: 10px;
+}
+
+.social {
+  margin-top: -30px;
+}
+
+.footer_second {
+  margin-top: 40px;
+  margin-left: 300px;
+  display: flex;
+  gap: 50px;
+}
+
+.footer_second ul {
+  gap: 50;
+}
+
+.footer_second li {
+  list-style-type: none;
+}
